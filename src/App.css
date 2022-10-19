@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'EB Garamond', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.icon{
+  /* border: 1px solid black; */
+  border-radius: 50%;
+}
+.icon:hover {
+  background-color: #d7aefb;
+  cursor: pointer;
+  color: #df2626;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link{
+  text-decoration: none;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.199);
+}
+
+#title{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+#search{
+  width: 45%;
+}
+
+.form-switch{
+  font-size: larger;
+}
+
+.sidebar{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height:90vh;
+  /* border: 1px solid red; */
 }
 
-.App-link {
-  color: #61dafb;
+i{
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+i:hover{
+  transform: rotateY(180deg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#slider{  
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.199);
+  clip-path: inset(0px -10px 0px 0px);
+}
+
+.iconText:hover, .btn:hover{
+  background-color: #d7aefb;
+  cursor: pointer;
+  color: red;
+}
+
+.iconText{
+  border-bottom-right-radius: 20em;
+  border-top-right-radius: 20em;
+}
+
+.content{
+  align-items: center;
+  flex-direction: column;
+  padding: 8vh;
+}
+
+.incontent{
+  width: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.353);
+  /* border-radius: 2rem; */
+}
+
+.content input, textarea{
+  width: 100%;
+  padding: 1em;
+  border: none;
+  resize: none;
+  outline: none; /* for removing the after click border */
+}
+
+.btn{
+  border: none;
+  outline: none;
+}
+
+.cardBox{
+  width: 100%;
+  padding-top: 3rem;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+  
+.trash:hover{
+  background-color: rgba(247, 93, 93, 0.962);
+  cursor: pointer;
+  color: white  ;
+  border-radius: 50%;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 5px #d7aefb;
+}
+
+.reminder{
+  font-size: 0.8rem;
+}
+
+.check{
+  width: 1vw;
 }
