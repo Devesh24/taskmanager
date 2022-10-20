@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Tasks from './components/Tasks';
 import React, {useState} from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as HashRouter, Route, Routes } from 'react-router-dom'
 import Reminder from './components/Reminder';
 import Lists from './components/Lists';
 import Search from './components/Search';
@@ -55,7 +55,7 @@ function App() {
       // </span>
     // </>
     <>
-      <Router>
+      <HashRouter>
         <Navbar toggleSide={toggleSide} toggleDarkMode={toggleDarkMode} mode={mode} search={search}/>
         <span className="d-flex">
           <Sidebar slide={slide} mode={mode}/> 
@@ -70,7 +70,7 @@ function App() {
             </Routes>
           </div>
         </span>
-      </Router>
+      </HashRouter>
     </>
   );
 }
