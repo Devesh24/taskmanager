@@ -64,7 +64,7 @@ function App() {
           </span>
           <div className='w-100' style={{display: searchVal!=="" ? "none" : "block"}}>
             <Routes>
-              <Route exact path="/" element={<Tasks mode={mode} searchVal={searchVal}/>} />
+              <Route exact path="/taskmanager" element={<Tasks mode={mode} searchVal={searchVal}/>} />
               <Route exact path="/remind" element={<Reminder mode={mode} searchVal={searchVal}/>} />
               <Route exact path="/list" element={<Lists mode={mode} searchVal={searchVal}/>} />
             </Routes>
